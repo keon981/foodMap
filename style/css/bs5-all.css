@@ -10932,4 +10932,12 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+form .form-select {
+  font-size: 12px;
+  text-align: center;
+}
+
+.list-group-item p {
+  font-size: 14px;
 }/*# sourceMappingURL=bs5-all.css.map */

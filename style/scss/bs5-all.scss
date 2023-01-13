@@ -3,6 +3,19 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap";// bs5樣式表
 
+form{
+    .form-select{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    
+}
+.list-group-item{
+    p{
+        font-size: 14px;
+    }
+}
 
 //自訂
 // @import "./mixin";//自訂套件

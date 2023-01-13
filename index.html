@@ -13,13 +13,60 @@
 </head>
 
 <body>
+    <article class="container-fluid d-flex vh-100">
+        <section class="row w-100">
+            <!-- 選單 -->
+            <menu class="col-3 h-100 m-0 p-0 bg-warning overflow-auto">
+                <h1 class="pt-3 px-2 fw-bolder">旅遊民宿</h1>
+                <form class="px-3">
+                    <div class="row align-items-center justify-content-lg-between my-2">
+                        <div class="col-12 col-xl-6 mb-3">
+                            <select id="inputCity" class="form-select" aria-label=".form-select-lg example">
+                                <option selected>── 請選擇縣市 ──</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-xl-6 mb-3">
+                            <select id="inputCity" class="form-select" aria-label=".form-select-sm example">
+                                <option selected>── 請選擇行政區 ──</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <ul class="list-group bg-white rounded-0">
+                    <li class="list-group-item">
+                        <h5 class="fw-bolder">民宿名稱</h5>
+                        <p class="">地區：</p>
+                        <p class="">電話：</p>
+                        <div class="d-flex justify-content-between">
+                            <p class=" flex-grow-1 border border-primary rounded-pill px-3 py-1 mx-1 text-bg-primary">小客車0輛</p>
+                            <p class=" flex-grow-1 border border-info rounded-pill px-3 py-1 mx-1 text-bg-info">機車0輛</p>
+                            <p class=" flex-grow-1 border border-success rounded-pill px-3 py-1 mx-1 text-bg-success">大客車0輛</p>
+                        </div>
+                    </li>
+                </ul>
+            </menu>
+            <!-- 地圖 -->
+            <main class="col-9 h-100 bg-secondary">
+                <div id="map"></div>
+            </main>
+        </section>
+
+    </article>
 
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
-        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
